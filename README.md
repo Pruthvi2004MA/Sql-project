@@ -1,4 +1,3 @@
-.
 
 📘 Online Book Store – SQL Data Analysis Project
 PostgreSQL | pgAdmin | Real Dataset | 20+ SQL Queries
