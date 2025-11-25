@@ -1,225 +1,56 @@
+# Online Bookstore — SQL Data Analysis
 
-📘 Online Book Store – SQL Data Analysis Project
-PostgreSQL | pgAdmin | Real Dataset | 20+ SQL Queries
-📌 Project Overview
+## Project Overview
+This project implements a complete data analysis of an **online bookstore** using SQL. I import real datasets (CSV) into PostgreSQL using pgAdmin, create relational tables, and then write **20+ SQL queries** to answer business-oriented questions. The analysis covers both basic and advanced SQL skills including joins, aggregations, subqueries, and more.
 
-This project explores an Online Book Store dataset where I created the entire database, imported CSV files, and wrote SQL queries to answer both basic and advanced business questions.
+## Dataset Description
+The project is based on three CSV files:
 
-The project includes:
+- `books.csv` — Book metadata (book ID, title, author, genre, published year, price, stock)  
+- `customers.csv` — Customer information (customer ID, name, email, city, country)  
+- `orders.csv` — Order transactions (order ID, customer ID, book ID, order date, quantity, total amount)  
 
-Creating the ONLINE_BOOK_STORE database
+These datasets are loaded into PostgreSQL tables for analysis.
 
-Creating tables: BOOKS, CUSTOMERS, ORDERS
+## SQL Queries & Business Questions
+The analysis involves **two parts**:
 
-Importing CSV data into PostgreSQL
+1. **Basic Queries**  
+   - List all Fiction books  
+   - Retrieve all customers from a city  
+   - Filter orders by date or amount  
+   - Calculate total stock or total revenue  
+   - … and more
 
-Running 20+ SQL queries
+2. **Advanced Queries**  
+   - Genre-wise total books sold  
+   - Top-spending customers  
+   - Average price per genre  
+   - Most frequently ordered books  
+   - Remaining stock after orders  
+   - … and additional deep-analysis
 
-Performing joins, aggregations, filters, subqueries, and calculations
+Each query is commented with the original business question, followed by your SQL solution.
 
-Finding real insights about customers, books, orders, genres, and revenue
+## Key Insights
+- Genre-level sales distribution (which genres sell the most)  
+- High-value customers who make the most purchases  
+- Trends in book orders (quantity, total amount)  
+- Books with low or zero stock — inventory risk  
+- Average price comparisons across genres  
 
-This project shows my SQL skills and ability to analyze real datasets.
+## How to Run This Project
+1. **Create a PostgreSQL database** (e.g., `online_book_store`)  
+2. **Open pgAdmin** → run the SQL file `Onlinebookstore.sql` to:  
+   - Create tables  
+   - Import data from CSVs  
+   - Execute all analysis queries  
+3. **View results** in pgAdmin’s Query Tool  
+4. Optionally, export query results or take screenshots
 
-📁 Dataset Details
-imported data :
+## Project Structure (Suggested)
 
-Customers.csv
 
-Orders.csv
 
-These datasets contain:
 
-BOOKS TABLE
 
-BOOK_ID
-
-TITLE
-
-AUTHOR
-
-GENRE
-
-PUBLISHED_YEAR
-
-PRICE
-
-STOCK
-
-CUSTOMERS TABLE
-
-CUSTOMER_ID
-
-NAME
-
-EMAIL
-
-PHONE
-
-CITY
-
-COUNTRY
-
-ORDERS TABLE
-
-ORDER_ID
-
-CUSTOMER_ID
-
-BOOK_ID
-
-ORDER_DATE
-
-QUANTITY
-
-TOTAL_AMOUNT
-
-🛠️ Technologies Used
-
-PostgreSQL
-
-pgAdmin 4
-
-SQL
-
-GitHub
-
-🗂️ Project Files Included
-📄 Onlinebookstore.sql (your main file)
-
-This SQL file contains:
-
-🔹 1. Database Creation
-
-Creating ONLINE_BOOK_STORE database
-
-Creating BOOKS, CUSTOMERS, and ORDERS tables
-
-🔹 2. Data Import
-COPY CUSTOMERS FROM 'Customers.csv';
-COPY ORDERS FROM 'Orders.csv';
-
-🔹 3. Basic SQL Queries
-
-Examples from your file:
-
-Retrieve all books in the Fiction genre
-
-Books published after 1950
-
-List customers from Canada
-
-Orders placed in November 2023
-
-Total stock of books
-
-Most expensive book
-
-Orders with quantity > 1
-
-Orders with total amount > 20
-
-Distinct genres
-
-Book with lowest stock
-
-Total revenue generated
-
-🔹 4. Advanced SQL Queries
-
-Total books sold per genre (JOIN)
-
-Average price of Fantasy books
-
-Customers with at least 2 orders
-
-Most frequently ordered book
-
-Top 3 most expensive Fantasy books
-
-Quantity sold by each author
-
-Cities of customers spending > $30
-
-Highest spending customer
-
-Remaining stock after fulfilling all orders
-
-These queries reflect strong SQL skills and real-world analysis.
-
-
-⭐ Basic Questions (1–10)
-
-All Fiction books
-
-Books after 1950
-
-Customers from Canada
-
-Orders in November 2023
-
-Total stock
-
-Most expensive book
-
-Quantity > 1 orders
-
-Amount > $20 orders
-
-All genres
-
-Book with lowest stock
-
-Total revenue
-
-⭐ Advanced Questions (1–9)
-
-Books sold by genre
-
-Average price of Fantasy books
-
-Customers with at least 2 orders
-
-Most frequently ordered book
-
-Top 3 expensive Fantasy books
-
-Quantity sold by each author
-
-Cities where spending > $30
-
-Highest spending customer
-
-Remaining stock after orders
-
-
-Key Insights From the Analysis
-
-Fiction and Fantasy appear as key genres
-
-Some books have extremely low stock
-
-Some customers consistently spend more than others
-
-Certain authors generate higher revenue
-
-Remaining stock varies based on order frequency
-
-Genre-level revenue patterns can be identified
-
-How to Run This Project
-
-Create a database:
-
-CREATE DATABASE ONLINE_BOOK_STORE;
-
-
-Run the table creation queries from SQL file
-
-Import your CSV files into pgAdmin
-
-Run the Basic queries
-
-Run the Advanced analysis queries
-
-View insights and results
